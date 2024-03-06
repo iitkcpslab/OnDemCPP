@@ -25,7 +25,7 @@ Video's URL: [YouTube](https://www.youtube.com/watch?v=5nhysTTp2Fw)
         * *j_capl.txt* file stores the collision-free path lengths of the participants in the *j*-th horizon. The format of each row is as follows -
 
         | Robot ID | Path Length | Start-Time Offset | Collision-Free Path Length | 
-        | ---------- | ------------------------------------ | ------------------ |
+        | ---------| ------------|-------------------|--------------------------- |
         * *cap_j.csv* file stores the collision-free paths of the participants in the *j*-th horizon. 
         * *resultPerHorizon.txt* file stores horizon-wise computation times and horizon lengths. 
         * *fp_stat.txt* file stores the performance of algorithm, which computes feasible paths. The format of each row is as follows -
