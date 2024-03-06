@@ -26,16 +26,21 @@ Video's URL: [YouTube](https://www.youtube.com/watch?v=5nhysTTp2Fw)
 
         | Robot ID | Path Length | Start-Time Offset | Collision-Free Path Length | 
         | ---------| ------------|-------------------|--------------------------- |
-        * *cap_j.csv* file stores the collision-free paths of the participants in the *j*-th horizon. 
-        * *resultPerHorizon.txt* file stores horizon-wise computation times and horizon lengths. 
+        * *cap_j.csv* file stores the collision-free paths of all the robots in the *j*-th horizon. 
         * *fp_stat.txt* file stores the performance of algorithm, which computes feasible paths. The format of each row is as follows -
 
         | Horizon ID | Iteration ID of the inner WHILE loop | Active robot count | Killed robot count | Revived robot count | Visited goal count |
         | ---------- | ------------------------------------ | ------------------ | ------------------ | ------------------- | ------------------ |
-    5.  src: Contains the source files corresponding to the header files. 
+        * *path_len.txt* file stores the total collision-free path lengths of all the robots.
+        * *post_comp.txt* file stores the times spent on sending the paths to all the active participants in a particular horizon. 
+        * *pre_comp.txt* file stores the times spent on updating the global view in a particular horizon.
+        * *r_i.txt* file stores the time spent on updating the global view with the i-th robot's localview.
+        * *result.txt* file stores the overall computation time, horizon length, and mission time. 
+        * *resultPerHorizon.txt* file stores horizon-wise computation times and horizon lengths. 
+    6.  src: Contains the source files corresponding to the header files. 
         * Robot side: *robot.cpp* emulates a robot. 
         * Coverage Planner side: The rest of the source files. 
-    6.  srv: Contains the service files. 
+    7.  srv: Contains the service files. 
 3.  Build the package:<br/> 
     `cd ~/catkin_ws && catkin_make clean && catkin_make`<br/>
     `echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc`
