@@ -42,9 +42,8 @@ Video's URL: [YouTube](https://www.youtube.com/watch?v=5nhysTTp2Fw)
         `rm ~/catkin_ws/src/OnDemCPP/output/*`<br/> 
         `rosrun ondemcpp_pkg onDemCPPExe _ws_x:=<Workspace size along the +x axis> _ws_y:=<Workspace size along the +y axis> _rc:=<Robot count>`
     -   Tab 3:
-        `cp ~/<Workspace directory>/robot_ws.txt ~/catkin_ws/src/GAMRCPP/input/`<br/> 
-        `source ~/catkin_ws/devel/setup.bash`<br/> 
-        `rosrun gamrcpp_pkg start_robots <Robot count>`
+        `cp ~/<Workspace directory>/ws_obs_robs.txt ~/catkin_ws/src/OnDemCPP/input/`<br/>
+        `rosrun ondemcpp_pkg robotExe __name:=robot_<Robot ID> _rid:=<Robot ID> # Run for each robot`
 
 <!--##### Gazebo simulation videos with quadcopters using PX4
 *   In 2D workspaces -
