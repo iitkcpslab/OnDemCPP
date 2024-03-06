@@ -34,7 +34,7 @@ Video's URL: [YouTube](https://www.youtube.com/watch?v=5nhysTTp2Fw)
         * *path_len.txt* file stores the total collision-free path lengths of all the robots.
         * *post_comp.txt* file stores the times spent on sending the paths to all the active participants in a particular horizon. 
         * *pre_comp.txt* file stores the times spent on updating the global view in a particular horizon.
-        * *r_i.txt* file stores the time spent on updating the global view with *Robot-i*'s localview.
+        * *r_i.txt* file stores the time spent on updating the global view with **Robot-i**'s localview.
         * *result.txt* file stores the overall computation time, horizon length, and mission time. 
         * *resultPerHorizon.txt* file stores horizon-wise computation times and horizon lengths. 
     6.  src: Contains the source files corresponding to the header files. 
