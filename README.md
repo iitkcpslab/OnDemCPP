@@ -8,7 +8,7 @@ Video's URL: [YouTube](https://www.youtube.com/watch?v=5nhysTTp2Fw)
 
 1.  Download the source code package:<br/> 
     `cd ~/catkin_ws/src/`<br/> 
-    `git clone https://github.com/iitkcpslab/GAMRCPP.git`
+    `git clone https://github.com/iitkcpslab/OnDemCPP.git`
 2.  Understand the directory structure:<br/> 
     1.  include: Contains the header files.<br/> 
         By default, the package is configured for **GAMRCPP** with the motions of a *Quadcopter in a 2D workspace*. However, this can be reconfigured in *debug.h* file. You may uncomment `#define TURTLEBOT` to configure the package for **GAMRCPP** with the motions of a *Turtlebot*. Similarly, you may uncomment `#define HOR_LEN_MAX` to configure the package for **GAMRCPP<sub>MAX</sub>** instead of **GAMRCPP**. 
