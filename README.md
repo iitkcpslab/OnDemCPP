@@ -33,7 +33,8 @@ Video's URL: [YouTube](https://www.youtube.com/watch?v=5nhysTTp2Fw)
         * Coverage Planner side: The rest of the source files. 
     6.  srv: Contains the service files. 
 3.  Build the package:<br/> 
-    `cd ~/catkin_ws ; catkin_make clean && catkin_make`
+    `cd ~/catkin_ws && catkin_make clean && catkin_make`<br/>
+    `echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc`
 4.  Run the package in a Terminal:
     -   Tab 1:
         `rosclean purge -y && pkill roscore ; roscore`
