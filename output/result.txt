@@ -1,0 +1,1 @@
+Workspace Size = 10 x 10, #Robots = 3, #Horizons = 39, Total Computation Time = 0.069929, Total Horizon Length = 44, Mission Time = 46.737847, QuadCopter
