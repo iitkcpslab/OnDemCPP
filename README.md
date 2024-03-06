@@ -1,6 +1,9 @@
 # OnDemCPP (Online On-Demand Multi-Robot Coverage Path Planning)
 Implementation of **Online On-Demand Multi-Robot Coverage Path Planning** [ICRA 2024] in **ROS Noetic Ninjemys** using **C++**.
 
+Paper's URL: https://arxiv.org/abs/2303.00047
+Video's URL: https://www.youtube.com/watch?v=5nhysTTp2Fw
+
 ###### Instructions:
 
 1.  Download the source code package:<br/> 
