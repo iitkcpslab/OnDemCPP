@@ -12,14 +12,14 @@ Video's URL: [YouTube](https://www.youtube.com/watch?v=5nhysTTp2Fw)
 2.  Understand the directory structure:<br/> 
     1.  include: Contains the header files.<br/> 
         By default, the package is configured for the motions of a *Quadcopter in a 2D workspace*. However, this can be reconfigured for the motions of a *Turtlebot* in *config.h* file by uncommenting `#define TURTLEBOT`. 
-    2.  input: *robot_ws.txt* represents the 2D workspace grid with obstacles and initial locations of the robots. 
+    2.  input: *ws_obs_robs.txt* represents the 2D workspace grid with obstacles and initial locations of the robots. 
          | Value      | Meaning                              |
          | -----      | ------------------------------------ |
          | 0.0        | Obstacle-occupied cell               |
          | 0.5        | Obstacle-free cell                   |
          | i (&ge; 1) | Initial location of **Robot-i**      |
 
-        *E.g.*, the given file represents a *4 x 3* grid with 2 robots - Robot-1 and Robot-2, having initial locations (0,0) and (3,2), respectively. 
+        *E.g.*, the given file represents a *10 x 10* grid with 3 robots - Robot-1, Robot-2, and Robot-3, having initial locations (1,0), (2, 1), and (3,2), respectively. 
     3.  msg: Contains message files. 
     4.  output: Contains the obtained results when run with the input. 
         * *cap_j.csv* file stores the collision-free paths of the robots generated in the *j*-th horizon. 
@@ -43,7 +43,7 @@ Video's URL: [YouTube](https://www.youtube.com/watch?v=5nhysTTp2Fw)
         `rosrun ondemcpp_pkg onDemCPPExe _ws_x:=<Workspace size along the +x axis> _ws_y:=<Workspace size along the +y axis> _rc:=<Robot count>`
     -   Tab 3:
         `cp ~/<Workspace directory>/ws_obs_robs.txt ~/catkin_ws/src/OnDemCPP/input/`<br/>
-        `rosrun ondemcpp_pkg robotExe __name:=robot_<Robot ID> _rid:=<Robot ID> # Run for each robot`
+        `rosrun ondemcpp_pkg robotExe __name:=robot_<Robot ID> _rid:=<Robot ID> # Run for each Robot-i`
 
 <!--##### Gazebo simulation videos with quadcopters using PX4
 *   In 2D workspaces -
