@@ -21,8 +21,12 @@ Video's URL: [YouTube](https://www.youtube.com/watch?v=5nhysTTp2Fw)
 
         *E.g.*, the given file represents a *10 x 10* grid with 3 robots - Robot-1, Robot-2, and Robot-3, having initial locations (1,0), (2, 1), and (3,2), respectively. 
     3.  msg: Contains message files. 
-    4.  output: Contains the obtained results when run with the input. 
-        * *cap_j.csv* file stores the collision-free paths of the robots generated in the *j*-th horizon. 
+    4.  output: Contains the obtained results when run with the input.
+        * *j_capl.txt* file stores the collision-free path lengths of the participants in the *j*-th horizon. The format of each row is as follows -
+
+        | Robot ID | Path Length | Start-Time Offset | Collision-Free Path Length | 
+        | ---------- | ------------------------------------ | ------------------ |
+        * *cap_j.csv* file stores the collision-free paths of the participants in the *j*-th horizon. 
         * *resultPerHorizon.txt* file stores horizon-wise computation times and horizon lengths. 
         * *fp_stat.txt* file stores the performance of algorithm, which computes feasible paths. The format of each row is as follows -
 
@@ -44,20 +48,3 @@ Video's URL: [YouTube](https://www.youtube.com/watch?v=5nhysTTp2Fw)
     -   Tab 3:
         `cp ~/<Workspace directory>/ws_obs_robs.txt ~/catkin_ws/src/OnDemCPP/input/`<br/>
         `rosrun ondemcpp_pkg robotExe __name:=robot_<Robot ID> _rid:=<Robot ID> # Run for each Robot-i`
-
-<!--##### Gazebo simulation videos with quadcopters using PX4
-*   In 2D workspaces -
-
-    https://user-images.githubusercontent.com/17489756/181875418-7d6f449d-bd06-4b48-8321-0521ec531a89.mp4
-
-    https://user-images.githubusercontent.com/17489756/181875451-d613dc90-03b5-4e05-b1c5-5a790d403a5a.mp4
-
-    https://user-images.githubusercontent.com/17489756/181875595-c9b6b367-5d6a-4e79-bd45-810cdf6dcf3e.mp4
-
-    https://user-images.githubusercontent.com/17489756/181875617-02f9eb41-d5e0-4f2c-af8f-d373546cc3d3.mp4
-
-    https://user-images.githubusercontent.com/17489756/181875620-ef5362e4-7c2c-41bf-853a-122709114350.mp4
-
-*   In 3D workspace -
-
-    https://user-images.githubusercontent.com/17489756/181875811-8d1fc5cb-4623-4117-93f5-34f89d61f9e1.mp4-->
