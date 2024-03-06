@@ -29,7 +29,7 @@ Video's URL: [YouTube](https://www.youtube.com/watch?v=5nhysTTp2Fw)
         | Horizon ID | Iteration ID of the inner WHILE loop | Active robot count | Killed robot count | Revived robot count | Visited goal count |
         | ---------- | ------------------------------------ | ------------------ | ------------------ | ------------------- | ------------------ |
     5.  src: Contains the source files corresponding to the header files. 
-        * Robot side: *robot.cpp* emulates a robot and *start_robots.cpp* starts as many robots as required in an experiment. 
+        * Robot side: *robot.cpp* emulates a robot. 
         * Coverage Planner side: The rest of the source files. 
     6.  srv: Contains the service files. 
 3.  Build the package:<br/> 
